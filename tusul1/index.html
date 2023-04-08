@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="bag1">
+        <div class="bag1-1">
+          <div class="image">
+            <img src="./image 28 (5).png" alt="" />
+          </div>
+        </div>
+        <div class="bag1-2">
+          <div class="image1">
+            <img src="./image 29 (2).png" alt="" />
+            <div class="list">
+              <div class="tab">
+                <button class="onclick=" openCity>Х</button>
+                <button
+                  class="tablinks"
+                  onclick="openCity(event, 'bag2')"
+                  id="defaultOpen"
+                >
+                  Нүүр
+                </button>
+                <button class="tablinks" onclick="openCity(event, 'bag3')">
+                  Бэлэг
+                </button>
+
+                <button class="tablinks" onclick="openCity(event, 'bag4')">
+                  Хөнгөлөлт
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="bag1-3">
+          <div class="image2">
+            <img src="./image 28 (5).png" alt="" />
+          </div>
+        </div>
+      </div>
+      <div class="bag2 tabcontent" id="bag2">
+        <div class="image3">
+          <img src="./image 15 (1).png" alt="" />
+        </div>
+      </div>
+      <div id="bag3" class="bag3 tabcontent">
+        <div class="bag3-1">
+          <img src="./Group 34.png" alt="" />
+          <img src="./Group 35.png" alt="" />
+          <img src="./Group 30.png" alt="" />
+          <img src="./Group 36.png" alt="" />
+          <img src="./Group 32.png" alt="" />
+          <img src="./Group 31.png" alt="" />
+        </div>
+      </div>
+      <div id="bag4" class="bag4 tabcontent">
+        <div class="bag4-1">
+          <div class="image5">
+            <img src="./image 28 (5).png" alt="" />
+          </div>
+        </div>
+        <div class="bag4-2">
+          <div class="image6">
+            <img src="./image 22.png" alt="" />
+            <div class="text">
+              <h1>Цагаан сар</h1>
+              <h1>Шинэ жил</h1>
+              <h1>Наадам</h1>
+              <h1>Эмэгтэйчүүдийн</h1>
+              <h1>баярын онцгой урамшуулалтай</h1>
+              <div class="image15">
+                <img src="./image 52.png" alt="" />
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="bag4-3">
+          <div class="image7">
+            <img src="./image 28 (5).png" alt="" />
+          </div>
+        </div>
+      </div>
+    </div>
+    <script>
+      function openCity(evt, cityName) {
+        var i, tabcontent, tablinks;
+        tabcontent = document.getElementsByClassName("tabcontent");
+        for (i = 0; i < tabcontent.length; i++) {
+          tabcontent[i].style.display = "none";
+        }
+        tablinks = document.getElementsByClassName("tablinks");
+        for (i = 0; i < tablinks.length; i++) {
+          tablinks[i].className = tablinks[i].className.replace(" active", "");
+        }
+        document.getElementById(cityName).style.display = "block";
+        evt.currentTarget.className += " active";
+      }
+
+      // Get the element with id="defaultOpen" and click on it
+      document.getElementById("defaultOpen").click();
+    </script>
+  </body>
+</html>

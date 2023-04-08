@@ -1,0 +1,85 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  overflow: hidden;
+}
+.pages {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  overflow: hidden;
+}
+.black-side {
+  background-color: black;
+  height: 100%;
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.black-side-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  /* border: 1px solid white; */
+  gap: 10px;
+}
+.logo {
+  width: 300px;
+}
+
+.box {
+  /* border: 1px solid red; */
+  color: white;
+}
+.box p {
+  font-weight: bold;
+}
+
+/* Баруун тал */
+.image-side {
+  width: 50%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.page-1-image {
+  background-image: url(./img/img1.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.page-2-image {
+  background-image: url(./img/img2-03.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.up-sliding {
+  animation: up-slide 1s ease-in-out infinite alternate;
+}
+@keyframes up-slide {
+  0% {
+    transform: translateY(0px);
+  }
+  100% {
+    transform: translateY(-100vh);
+  }
+}
+.down-sliding {
+  animation: down-slide 1s ease-in-out infinite alternate;
+}
+@keyframes down-slide {
+  0% {
+    transform: translateY(0px);
+  }
+  100% {
+    transform: translateY(100vh);
+  }
+}

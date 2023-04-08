@@ -1,0 +1,43 @@
+   text.txt
+1.
+    1 salgah
+    2  urt
+    3   zusmel
+    4  solih
+    5  zasah
+2.   
+    1 document  object model
+3    
+    1 n  obekt
+    1 n  buh test bagtlah 
+4   
+    1   hasah
+    2    negtgeh
+    3     pop
+    4      shiljuuleh
+    5   butsaah
+5 
+     hegtgeh  
+6    
+    split
+7
+       1  nemeh
+       2ustgah
+       3 solih
+       4  erguuleh
+8 
+        add
+9
+     shalgaj  shiidiig oloh 
+10
+       !   link
+11
+       1  tentsuu
+       2 tentsuu
+       3  uldegdelgui huvaah  0 gargaj
+       4 uldegteltei huvaah
+       5 hemeh
+       6  adil bish
+       7 adil bish
+       8  bas dahiad
+       9 neg nuhtsul unen baih
